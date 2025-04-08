@@ -1,6 +1,7 @@
-import Hero from "../../components/Hero";
 import Navbar from "../../components/Navbar";
-import Type from "../../components/Type";
+import Hero from "../../section/Hero";
+import SpecialCoffee from "../../section/SpecialCoffee";
+import Type from "../../section/Type";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Navbar/>
       <Hero/>
       <Type/>
+      <SpecialCoffee/>
     </div>
   );
 }

@@ -1,14 +1,7 @@
 import { Disclosure, DisclosureButton, DisclosurePanel} from '@headlessui/react'
 import { Bars3Icon, MagnifyingGlassIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import Image from 'next/image'
-
-const navigation = [
-  { name: 'Home', href: '#', current: true },
-  { name: 'Coffee', href: '#', current: false },
-  { name: 'Bakery', href: '#', current: false },
-  { name: 'Shop', href: '#', current: false },
-  { name: 'About', href: '#', current: false },
-]
+import { navigation } from '../constant'
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ')
