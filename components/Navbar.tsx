@@ -45,7 +45,7 @@ export default function Navbar() {
                     href={item.href}
                     aria-current={item.current ? 'page' : undefined}
                     className={classNames(
-                      item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                      item.current ? 'bg-dark text-primary' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                       'rounded-md px-3 py-2 text-sm font-medium',
                     )}
                   >
@@ -64,13 +64,11 @@ export default function Navbar() {
               <span className="sr-only">View notifications</span>
               <MagnifyingGlassIcon aria-hidden="true" className="size-6" />
             </button>
-
-
           </div>
         </div>
       </div>
 
-      <DisclosurePanel className="absolute w-full bg-white sm:hidden">
+      <DisclosurePanel className="absolute w-full bg-primary rounded-b-xl sm:hidden">
         <div className="space-y-1 px-2 pt-2 pb-3">
           {navigation.map((item) => (
             <DisclosureButton
@@ -79,7 +77,7 @@ export default function Navbar() {
               href={item.href}
               aria-current={item.current ? 'page' : undefined}
               className={classNames(
-                item.current ? 'bg-gray-900 text-white' : 'text-gray-600 hover:bg-gray-700 hover:text-white',
+                item.current ? 'bg-dark text-primary' : 'text-dark hover:bg-gray-700 hover:text-white',
                 'block rounded-md px-3 py-2 text-base font-medium',
               )}
             >
