@@ -23,9 +23,9 @@ export default function SpecialCoffee() {
   }
 
   return (
-    <div className="bg-primary py-5 px-2 text-center">
+    <div className="bg-primary py-5 px-3.5 text-center">
       <div className="uppercase font-bold text-xl">Our Special Coffee</div>
-      <div className="flex overflow-scroll gap-3">
+      <div className="flex overflow-scroll gap-3 mt-3">
         {beveragesMenus.map((beverage, index) => (
           <MenuCard
             key={index}
