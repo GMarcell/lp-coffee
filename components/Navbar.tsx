@@ -16,7 +16,7 @@ function classNames(...classes: string[]) {
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="sticky z-50 backdrop-blur-sm">
+    <Disclosure as="nav" className="fixed top-0 left-0 w-full z-50 bg-transparent">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -70,7 +70,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      <DisclosurePanel className="absolute w-full bg-gray-700 sm:hidden">
+      <DisclosurePanel className="absolute w-full bg-white sm:hidden">
         <div className="space-y-1 px-2 pt-2 pb-3">
           {navigation.map((item) => (
             <DisclosureButton
@@ -79,7 +79,7 @@ export default function Navbar() {
               href={item.href}
               aria-current={item.current ? 'page' : undefined}
               className={classNames(
-                item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                item.current ? 'bg-gray-900 text-white' : 'text-gray-600 hover:bg-gray-700 hover:text-white',
                 'block rounded-md px-3 py-2 text-base font-medium',
               )}
             >
