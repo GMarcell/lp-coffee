@@ -40,8 +40,8 @@ export default function SpecialCoffee() {
 
   return (
     <div className="bg-primary py-5 px-3.5 text-center flex flex-col gap-5 md:px-16">
-      <div className="uppercase font-bold text-xl">Our Special Coffee</div>
-      <div className="flex overflow-scroll gap-3 mt-3">
+      <div className="uppercase font-bold text-xl mt-5">Our Special Coffee</div>
+      <div className="flex overflow-scroll gap-3 mt-3 md:gap-10">
         {beveragesMenus.map((beverage, index) => (
           <MenuCard
             key={index}
@@ -54,8 +54,8 @@ export default function SpecialCoffee() {
           />
         ))}
       </div>
-      <div className="uppercase font-bold text-xl">Our Special Desserts</div>
-      <div className="flex overflow-scroll gap-3 mt-3">
+      <div className="uppercase font-bold text-xl mt-5">Our Special Desserts</div>
+      <div className="flex overflow-scroll gap-3 mt-3 md:gap-10">
         {dessertsMenus.map((dessert, index) => (
           <MenuCard
             key={index}
